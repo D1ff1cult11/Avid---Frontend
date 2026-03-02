@@ -1,0 +1,13 @@
+:root {
+  --bg-main: #0c1b2a;
+  --card-bg: #ffffff;
+  --accent: #0f9d58;
+  --border: #1c3a5c;
+  --text-main: #122033;
+  --text-muted: #3b4f67;
+  --danger: #a81d1d;
+  --radius: 8px;
+  --shadow: 0 14px 24px rgba(0, 0, 0, 0.22);
+  --font-main: "Segoe UI", "Trebuchet MS", system-ui, sans-serif;
+  --font-terminal: "Courier New", ui-monospace, monospace;
+}
