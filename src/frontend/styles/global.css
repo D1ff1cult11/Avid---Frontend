@@ -51,23 +51,6 @@ body {
   color: var(--text-muted);
 }
 
-.terminal-card {
-  font-family: var(--font-terminal);
-  background: #0b1118;
-  color: #d3ffe5;
-  border-color: #0d5f39;
-}
-
-.terminal-title {
-  color: var(--accent);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.terminal-line {
-  margin: 6px 0;
-}
-
 .input-label {
   display: block;
   margin-bottom: 10px;

@@ -23,12 +23,6 @@ export default function VotingPage() {
     <main className="page">
       <ElectionHeader />
 
-      <section className="card terminal-card">
-        <div className="terminal-title">SECURE EVM TERMINAL</div>
-        <p className="terminal-line">✓ Cryptographic masking enabled</p>
-        <p className="terminal-line">✓ Distributed vote submission active</p>
-      </section>
-
       <VoterIdInput value={voterId} onChange={setVoterId} />
 
       <BallotCard
