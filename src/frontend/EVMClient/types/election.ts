@@ -1,6 +1,8 @@
 export interface Candidate {
   id: string;
   name: string;
+  age?: number;
+  dob?: string;
 }
 
 export interface ElectionConfig {
@@ -21,4 +23,17 @@ export interface ServerSubmissionResult {
 export interface VoteSubmitResult {
   receiptHash: string;
   serverResults: ServerSubmissionResult[];
+}
+
+export interface AuthorizedStaff {
+  id: string;
+  name: string;
+  authorizedAt: string;
+}
+
+export interface EvmClient {
+  id: string;
+  clientId: string;
+  allowed: boolean;
+  addedAt: string;
 }

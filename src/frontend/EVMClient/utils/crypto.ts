@@ -20,6 +20,14 @@ function xorBytes(left: Uint8Array, right: Uint8Array): Uint8Array {
   return out;
 }
 
+export function generateSigningKeyPair(): { publicKey: string; secretKey: string } {
+  const pair = nacl.sign.keyPair();
+  return {
+    publicKey: bytesToBase64(pair.publicKey),
+    secretKey: bytesToBase64(pair.secretKey)
+  };
+}
+
 export function generateSymmetricKey(): Uint8Array {
   return nacl.randomBytes(nacl.secretbox.keyLength);
 }
