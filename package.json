@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^2.0.2",
     "js-sha256": "^0.11.1",
+    "pdfjs-dist": "^5.5.207",
     "preact": "^10.27.2",
-    "tweetnacl": "^1.0.3"
+    "tweetnacl": "^1.0.3",
+    "wouter": "^3.9.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
