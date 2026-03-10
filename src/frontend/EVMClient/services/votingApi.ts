@@ -52,7 +52,7 @@ export async function submitDistributedVote(
     symmetricKey
   );
 
-  const targetServers = selectVotingServers(voterId, electionConfig.electionId);
+  const targetServers = await selectVotingServers(voterId, electionConfig.electionId);
   if (targetServers.length === 0) {
     throw new Error("No voting servers are configured.");
   }
