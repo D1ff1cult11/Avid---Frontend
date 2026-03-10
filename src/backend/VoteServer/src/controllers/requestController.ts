@@ -13,7 +13,11 @@ function buildSignedResponse(requestNonce: number, responsePayload: unknown): Vs
   const metadata = {
     timestamp: new Date().toISOString(),
     server_id: serverId,
-    request_nonce: requestNonce
+    request_nonce: requestNonce,
+    vs_cert: {
+      vsPublicKey: publicKeyVs,
+      signatureByEC: process.env.SIGNATURE_BY_EC || "" // This should be the signature of the VS public key signed by the EC private key.
+    }
   };
 
   const responseWithoutSignature = {

@@ -15,3 +15,4 @@ export function signResponse(payload: unknown): string {
   const normalizedPrivateKey = privateKey.replace(/\\n/g, "\n");
   return sign.sign(normalizedPrivateKey, "base64");
 }
+

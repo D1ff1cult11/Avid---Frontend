@@ -5,7 +5,7 @@ import { EvmRequest } from "../types/evmRequest";
 export function authMiddleware(req: Request, res: Response, next: NextFunction): void {
   const body = req.body as EvmRequest;
 
-  const isValid = verifyEvmSignature();
+  const isValid = verifyEvmSignature(body, process.env.EC_PUBLIC_KEY || "");
   if (!isValid) {
     console.log("Rejected request due to invalid signature");
     res.status(401).json({ error: true, message: "Invalid request signature" });
