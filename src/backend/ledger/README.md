@@ -72,6 +72,12 @@ npm start
 - `PORT`: service port (default `3000`)
 - `SQLITE_DB_PATH`: sqlite database file path (default `./ledger.db`)
 
+## API Documentation
+
+Full endpoint documentation (request/response schemas, validation rules, status codes, and errors):
+
+- [`docs/API.md`](docs/API.md)
+
 ## API Endpoints
 
 ### Writes
