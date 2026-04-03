@@ -6,7 +6,7 @@ import VotingPage from "./EVMClient/pages/VotingPage";
 
 export default function App() {
   return (
-    <>
+    <div>
       <Nav />
       <Switch>
         <Route path="/" component={VotingPage} />
@@ -20,6 +20,6 @@ export default function App() {
           </main>
         </Route>
       </Switch>
-    </>
+    </div>
   );
 }
